@@ -1,0 +1,159 @@
+.formacao-container {
+  max-width: 1200px;
+  padding: 115px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.formacao {
+  background-color: #0e0d0d;
+  color: #fff;
+}
+
+/* SUBTITULO */
+.formacao .subtitulo {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 8rem;
+  max-width: 5ch;
+}
+
+/* FORMAÇÃO TEXTO */
+.formacao-texto {
+  font-size: 1.5rem;
+  margin-bottom: 60px;
+  max-width: 40ch;
+  line-height: 1.33;
+}
+
+/* LISTA DE FACULDADES */
+.faculdade-lista {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  gap: 20px;
+}
+
+.faculdade-lista li {
+  background: #000000;
+  padding: 20px;
+  display: flex;
+  border-radius: 4px;
+  flex-direction: column;
+  flex: 1;
+}
+
+.faculdade-tipo {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.faculdade-curso {
+  margin-bottom: 40px;
+  flex: 1;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  position: relative;
+}
+
+.faculdade-curso::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  display: block;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  top: 2px;
+  left: -24px;
+}
+
+/* FORMAÇÃO EXTRA */
+.cursos {
+  margin-bottom: 60px;
+}
+
+.cursos-subtitulo {
+  color: #8f8f8f;
+  margin-bottom: 25px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.cursos-subtitulo::before {
+  content: "";
+  width: 44px;
+  height: 24px;
+  top: -6px;
+  left: -35px;
+  display: block;
+  background: url(/img/cursos.svg) no-repeat;
+  position: absolute;
+}
+
+.curso-tipo {
+  margin-bottom: 18px;
+  font-size: 1.125rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.idiomas-subtitulo {
+  color: #8f8f8f;
+  margin-bottom: 25px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.idiomas-subtitulo::before {
+  content: "";
+  width: 44px;
+  height: 24px;
+  top: -5px;
+  left: -35px;
+  display: block;
+  background: url(/img/idiomas.svg) no-repeat;
+  position: absolute;
+}
+
+.idiomas-tipo {
+  margin-bottom: 18px;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 850px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-top: 60px;
+  }
+
+  .formacao .subtitulo {
+    word-break: initial;
+    font-size: 5rem;
+    letter-spacing: 2px;
+    justify-self: center;
+    max-width: none;
+  }
+
+  .formacao-texto {
+    font-size: 1.3rem;
+    text-align: center;
+    max-width: none;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .formação-extra {
+    margin-left: 35px;
+  }
+}
+
+
+
