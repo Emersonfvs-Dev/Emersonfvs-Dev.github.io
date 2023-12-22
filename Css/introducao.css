@@ -77,13 +77,13 @@
   }
 
   .Introducao h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-align: center;
     line-height: 5.2rem;
   }
 
   .Introducao p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: center;
   }
   .Introducao h1::before {
@@ -104,5 +104,20 @@
     top: 120px;
     right: -5px;
     border-radius: 4px;
+  }
+}
+
+@media (max-width: 450px) {
+  .Introducao h1 {
+    font-size: 2.7rem;
+    margin-bottom: 8px;
+    line-height: 4.2rem;
+  }
+  .Introducao h1::before {
+    top: 95px;
+  }
+
+  .Introducao h1::after {
+    top: 95px;
   }
 }

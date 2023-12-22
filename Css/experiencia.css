@@ -121,11 +121,22 @@
   }
 
   .experiencia-texto {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    margin: 0px 30px 40px 30px;
   }
   .experiencia .subtitulo {
-    font-size: 3.7rem;
+    font-size: 3.3rem;
     max-width: initial;
     letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 450px) {
+  .experiencia .subtitulo {
+    font-size: 2.5rem;
+  }
+  .experiencia-texto {
+    font-size: 1rem;
+    margin: 0px 10px 40px 0px;
   }
 }
